@@ -8,8 +8,8 @@
 
 int main(void)
 {
-    char *svgfile = "d:\\cairotest\\11.svg";
-    char *pdffile = "d:\\cairotest\\11.pdf";
+    char *svgfile = "G:\\panliang\\svg\\test1.svg";
+    char *pdffile = "G:\\panliang\\svg\\test1.pdf";
     char error[1024] = { 0 };
 
     if (!libsvg2pdf(svgfile, pdffile, error))

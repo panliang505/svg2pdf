@@ -13,13 +13,14 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EFCF3DE4-0D0B-4132-AFB1-287B69E0C190}</ProjectGuid>
     <RootNamespace>svg2pdf</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120_xp</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -48,6 +49,7 @@
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\third-party\librsvg\include;..\third-party\cairo\include;..\third-party\pango\include;..\third-party\glib\include\glib;..\third-party\glib\include;..\third-party\glib\include\gio;..\third-party\gdk-pixbuf\include;..\third-party\glib\include\gmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
